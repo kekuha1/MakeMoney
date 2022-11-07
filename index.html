@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="dom.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form onsubmit="submitHandle(event)">
+      <label for="number0fCoins">How Many?</label>
+      <input type="number" name="numberOfCoins" id="numberOfCoins" />
+      <br />
+      <label for="typeOfCoins">Which Coin?</label>
+      <label for="penny">Penny</label>
+      <input name="typeOfCoins" id="penny" value="penny" type="radio" />
+      <label for="nickle">Nickle</label>
+      <input name="typeOfCoins" id="nickle" value="nickle" type="radio" />
+      <label for="dime">Dime</label>
+      <input name="typeOfCoins" id="dime" value="dime" type="radio" />
+      <label for="quarter">Quarter</label>
+      <input name="typeOfCoins" id="quarter" value="quarter" type="radio" />
+      <br /><input type="submit" value="Make-Money!" />
+    </form>
+    <div id="container"></div>
+  </body>
+</html>
